@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "Atekushi\\Env\\": "src/"
-        }
+        },
+        "files": ["src/functions.php"]
     },
     "authors": [
         {
