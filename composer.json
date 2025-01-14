@@ -18,6 +18,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^8.2",
-        "atekushi/support": "dev-main"
+        "atekushi/facade": "dev-main",
+        "atekushi/singleton": "^1.0"
     }
 }

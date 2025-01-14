@@ -5,7 +5,7 @@ namespace Atekushi\Env;
 use Atekushi\Env\Exceptions\ImmutableKeyException;
 use Atekushi\Env\Interfaces\ParserInterface;
 use Atekushi\Env\Parsers\EnvParser;
-use Atekushi\Support\Singleton;
+use Atekushi\Singleton\Singleton;
 
 class Env extends Singleton
 {

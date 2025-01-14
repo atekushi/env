@@ -4,30 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "866bc334c56a92299346785163c9034a",
+    "content-hash": "fc6c30993c86d277c370bd153ee6bf5e",
     "packages": [
         {
-            "name": "atekushi/support",
+            "name": "atekushi/container",
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/atekushi/support.git",
-                "reference": "29129cf822c635b84babbe37bc7e0be8ebb8b34b"
+                "url": "https://github.com/atekushi/container.git",
+                "reference": "ec5100f9e4bf98ca2a989adffba7b4576dfe891f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atekushi/support/zipball/29129cf822c635b84babbe37bc7e0be8ebb8b34b",
-                "reference": "29129cf822c635b84babbe37bc7e0be8ebb8b34b",
+                "url": "https://api.github.com/repos/atekushi/container/zipball/ec5100f9e4bf98ca2a989adffba7b4576dfe891f",
+                "reference": "ec5100f9e4bf98ca2a989adffba7b4576dfe891f",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.2"
+                "atekushi/singleton": "^1.0",
+                "php": "^8.2",
+                "psr/container": "^2.0"
             },
             "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Atekushi\\Support\\": "src/"
+                    "Atekushi\\Container\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -40,19 +42,156 @@
                     "email": "endrika.nanami@gmail.com"
                 }
             ],
-            "description": "PHP Package to Support All Atekushi Library",
+            "description": "PHP Container",
             "support": {
-                "issues": "https://github.com/atekushi/support/issues",
-                "source": "https://github.com/atekushi/support/tree/main"
+                "issues": "https://github.com/atekushi/container/issues",
+                "source": "https://github.com/atekushi/container/tree/main"
             },
-            "time": "2025-01-09T09:31:58+00:00"
+            "time": "2025-01-14T09:37:39+00:00"
+        },
+        {
+            "name": "atekushi/facade",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atekushi/facade.git",
+                "reference": "b300a6d48c6b29831cf55c0dbc6bcb38ec7724ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atekushi/facade/zipball/b300a6d48c6b29831cf55c0dbc6bcb38ec7724ff",
+                "reference": "b300a6d48c6b29831cf55c0dbc6bcb38ec7724ff",
+                "shasum": ""
+            },
+            "require": {
+                "atekushi/container": "dev-main",
+                "atekushi/singleton": "1.*",
+                "php": "^8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Atekushi\\Facade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Endrika Nanami",
+                    "email": "endrika.nanami@gmail.com"
+                }
+            ],
+            "description": "Small Library to Implement Facade on DI Container To Your Project",
+            "support": {
+                "issues": "https://github.com/atekushi/facade/issues",
+                "source": "https://github.com/atekushi/facade/tree/1.0.0"
+            },
+            "time": "2025-01-14T09:57:40+00:00"
+        },
+        {
+            "name": "atekushi/singleton",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atekushi/singleton.git",
+                "reference": "8ca7b33e63d361dee8e52db23a64bca25e879fc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atekushi/singleton/zipball/8ca7b33e63d361dee8e52db23a64bca25e879fc6",
+                "reference": "8ca7b33e63d361dee8e52db23a64bca25e879fc6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Atekushi\\Singleton\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Endrika Nanami",
+                    "email": "endrika.nanami@gmail.com"
+                }
+            ],
+            "description": "Small Library to Implement Singleton Pattern To Your Project",
+            "support": {
+                "issues": "https://github.com/atekushi/singleton/issues",
+                "source": "https://github.com/atekushi/singleton/tree/1.0.0"
+            },
+            "time": "2025-01-14T09:33:31+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/707984727bd5b2b670e59559d3ed2500240cf875",
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container"
+            },
+            "time": "2023-09-22T11:11:30+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "atekushi/support": 20
+        "atekushi/facade": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

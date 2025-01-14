@@ -4,7 +4,7 @@ namespace Atekushi\Env\Facades;
 
 use Atekushi\Env\Env as BaseClass;
 use Atekushi\Env\Interfaces\ParserInterface;
-use Atekushi\Support\Facade;
+use Atekushi\Facade\Facade;
 
 /**
  * @package Atekushi/Env
